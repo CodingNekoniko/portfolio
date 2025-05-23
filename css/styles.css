@@ -75,11 +75,11 @@
 /* ------------------------------------------------------------------- 
  * ## fonts 
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff')");
 
 :root {
 
-    --font-1 : "Public Sans", sans-serif;
+    --font-1 : "GmarketSansMedium", sans-serif;
     --font-2 : "DM Serif Display", serif;
 
     /* monospace
@@ -148,6 +148,7 @@
     --color-gray-2  : #d0d0d0;
     --color-gray-1  : #e8e8e8;
     --color-white   : #ffffff;
+    --color-hotPink  : #FF69B4;
 
     /* text
      */
@@ -179,7 +180,7 @@
 
     /* others
      */
-    --color-body    : var(--color-gray-10);
+    --color-body    : var(--color-hotPink);
     --color-border  : rgba(255, 255, 255, .05);
     --border-radius : 3px;
 }
@@ -190,12 +191,12 @@
 :root {
 
     /* spacing
-     * base font size: 19px 
+     * base font size: 9px 
      * vertical space unit : 32px
      */
     --base-size      : 62.5%;
     --multiplier     : 1;
-    --base-font-size : calc(1.9rem * var(--multiplier));
+    --base-font-size : calc(0.9rem * var(--multiplier));
     --space          : calc(3.2rem * var(--multiplier));
 
     /* vertical spacing 
@@ -2686,9 +2687,9 @@ img.u-pull-left {
 }
 
 .text-huge-title {
-    --text-huge : 10.8rem;
+    --text-huge : 6rem;
     font-size   : var(--text-huge);
-    line-height : 1.0740;
+    line-height : 0.8;
     margin-top  : 0;
 }
 
